@@ -14,22 +14,22 @@ Debido a una incongruencia de los datos, posiblemente debido a la falta de infom
 en la propia tabla Inventory, por lo que se ha decidido añadir registros a la tabla Inventario. 
 Para hacerlo, se han añadido a Inventario todas las ID por encima de 1000. Para el campo Film_id y Store_id, se ha randomizado sus valores. Esto hace que la tabla 
 Inventario no sea fiel a los datos originales, pero le da consistencia al modelo.
-
+(ejecutar datos.py)
 
 -DEFINICIÓN
 El aspecto que presenta la BBDD inicialmente será el siguiente:
 ![image](https://user-images.githubusercontent.com/111570446/200181006-ee7d35e8-4212-4e21-ac0d-369c8c6aacad.png)
 También se han creado 2 tablas nuevas que no aparecian en los CSV originales, que pertenecen al personal(Staff) y al cliente(Customer)
-
+(ejecutar el codigo de CREATE.SQL)
 
 -IMPORTACION
 Sobre este esquema empezaremos a volcar los datos (ya analizados y limpios). 
-
+(ejecutar import.py)
 
 -ALTERACIÓN
 Una vez volcados, se unifican las columnas first_name y last_name de las tablas Actor y Hdd,
 de modo que nos queda una unica columna que ademas nos vale como indice.
-
+(ejecutar alter.py)
 
 
 
