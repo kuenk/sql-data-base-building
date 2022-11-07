@@ -1,0 +1,18 @@
+select title, release_year from film where length between 60 and 70;
+
+select rental_id, staff.name from rental
+inner join staff
+on rental.staff_id = staff.staff_id limit 10;
+
+
+
+
+Estas querys se hacen durante el proceso, daran error si se repiten.
+
+ALTER TABLE actor
+ADD full_name VARCHAR(40);
+
+UPDATE actor
+SET full_name = concat(first_name, ' ', last_name);
+
+insert into film values (1000, 'MALDITOS BASTARDOS', 'Un peliculon', 2015, 2, 3, 4.99, 90, 20, 'R', 'Behind the scenes');
